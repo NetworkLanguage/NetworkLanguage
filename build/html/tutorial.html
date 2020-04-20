@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>欢迎查看项目文档 &mdash; 网络语言特征刻画与身份识别方法研究 1.0 文档</title>
+  <title>3. 安装环境及运行 &mdash; 网络语言特征刻画与身份识别方法研究 1.0 文档</title>
   
 
   
@@ -46,7 +46,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="1. 项目介绍" href="introduction.html" /> 
+    <link rel="next" title="4. 实验结果" href="results.html" />
+    <link rel="prev" title="2. 数据集" href="datasets.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -60,7 +61,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> 网络语言特征刻画与身份识别方法研究
+            <a href="index.html" class="icon icon-home"> 网络语言特征刻画与身份识别方法研究
           
 
           
@@ -90,10 +91,14 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. 项目介绍</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">2. 数据集</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">3. 安装环境及运行</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 安装环境及运行</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.1. 环境需求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.2. 运行</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="results.html">4. 实验结果</a></li>
 </ul>
 
@@ -109,7 +114,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">网络语言特征刻画与身份识别方法研究</a>
+          <a href="index.html">网络语言特征刻画与身份识别方法研究</a>
         
       </nav>
 
@@ -138,15 +143,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>欢迎查看项目文档</li>
+      <li>3. 安装环境及运行</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/tutorial.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -160,26 +165,50 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>欢迎查看项目文档<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>这里是《网络语言特征刻画与身份识别方法研究》项目的详细文档，欢迎交流与指教。</p>
+<h1>3. 安装环境及运行<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id2">
-<h2>目录:<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. 项目介绍</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datasets.html">2. 数据集</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="datasets.html#id2">2.1. 微博数据集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datasets.html#id3">2.2. 豆瓣影评数据集</a></li>
+<h2>3.1. 环境需求<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ol>
+<li><p class="first">Python版本及环境</p>
+<p>Python 3.6</p>
+</li>
+<li><p class="first">安装包</p>
+<ul class="simple">
+<li>scikit-learn 0.21.3</li>
+<li>gensim 3.8.0</li>
+<li>jieba 0.39</li>
+<li>fasttext 0.9.1</li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">3. 安装环境及运行</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.html#id2">3.1. 环境需求</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.html#id3">3.2. 运行</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="results.html">4. 实验结果</a></li>
-</ul>
+</ol>
 </div>
+<div class="section" id="id3">
+<h2>3.2. 运行<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ol class="simple">
+<li>BOW（词袋模型）</li>
+<li>Word2vec<ul>
+<li>代码见</li>
+<li>main函数中可调整参数有：<ul>
+<li>task: 对应三个预测任务，分别为weibo_gender, weibo_area, douban</li>
+<li>dim: 词向量维度</li>
+<li>iter: word2vec训练迭代次数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fastText<ul>
+<li>代码见</li>
+<li>main函数可调整参数有：<ul>
+<li>task: 对应三个预测任务，分别为weibo_gender, weibo_area, douban</li>
+<li>dim: 特征维度</li>
+<li>epoch：模型训练迭代次数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>BERT</li>
+<li>ERNIE</li>
+</ol>
 </div>
 </div>
 
@@ -191,8 +220,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="introduction.html" class="btn btn-neutral float-right" title="1. 项目介绍" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="results.html" class="btn btn-neutral float-right" title="4. 实验结果" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="datasets.html" class="btn btn-neutral float-left" title="2. 数据集" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

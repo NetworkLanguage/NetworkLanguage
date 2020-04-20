@@ -3,18 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to 网络言语特征刻画与身份识别方法研究's documentation!
+欢迎查看项目文档
 ==============================================================
+
+这里是《网络语言特征刻画与身份识别方法研究》项目的详细文档，欢迎交流与指教。
+
+目录:
+^^^^^
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :numbered: 2
+   
+   introduction.md
+   datasets.md
+   tutorial.md
+   results.md
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

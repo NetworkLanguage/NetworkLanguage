@@ -19,9 +19,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = '网络言语特征刻画与身份识别方法研究'
-copyright = '2020, 网络言语特征刻画与身份识别方法研究项目组'
-author = '网络言语特征刻画与身份识别方法研究项目组'
+project = '网络语言特征刻画与身份识别方法研究'
+copyright = '2020, 网络语言特征刻画与身份识别方法研究项目组'
+author = '网络语言特征刻画与身份识别方法研究项目组'
 
 # The short X.Y version
 version = ''
@@ -143,8 +143,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'sphinx.tex', '网络言语特征刻画与身份识别方法研究 Documentation',
-     '网络言语特征刻画与身份识别方法研究项目组', 'manual'),
+    (master_doc, 'sphinx.tex', '网络语言特征刻画与身份识别方法研究 Documentation',
+     '网络语言特征刻画与身份识别方法研究项目组', 'manual'),
 ]
 
 
@@ -153,7 +153,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sphinx', '网络言语特征刻画与身份识别方法研究 Documentation',
+    (master_doc, 'sphinx', '网络语言特征刻画与身份识别方法研究 Documentation',
      [author], 1)
 ]
 
@@ -164,7 +164,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'sphinx', '网络言语特征刻画与身份识别方法研究 Documentation',
+    (master_doc, 'sphinx', '网络语言特征刻画与身份识别方法研究 Documentation',
      author, 'sphinx', 'One line description of project.',
      'Miscellaneous'),
 ]
