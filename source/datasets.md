@@ -17,20 +17,20 @@
 
   - 女性用户微博词云
 
-    <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/female.png?raw=trueimage" style="zoom:50%" />
+    <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/female.png" style="zoom:50%" />
 
     &nbsp;
 
   - 男性用户微博词云
 
-    <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/male.png?raw=trueimage" style="zoom:50%" />
+    <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/male.png?raw=trueimage" style="zoom:50%" />
 
     &nbsp;
 
 - 用户地理分布图
   (图内未显示海外地区的581名用户)
 
-  <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/location_province.png?raw=trueimage" style="zoom:50%" />
+  <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/location_province.png" style="zoom:50%" />
 
   &nbsp;
 
@@ -47,7 +47,7 @@
 
 - 影评词云
 
-  <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/douban.png?raw=trueimage" style="zoom:50%" />
+  <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/douban.png" style="zoom:50%" />
 
 &nbsp;
 
