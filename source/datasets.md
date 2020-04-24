@@ -13,7 +13,7 @@
   - 地理位置分布：中国的34个省市自治区及海外地区
 
 
-- 词云
+- 博文词云
 
   <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/weibo.png" style="zoom:50%" />
 
@@ -23,7 +23,7 @@
 - 用户地理分布图
   (图内未显示海外地区的581名用户)
 
-  <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/location_province.png" style="zoom:65%" />
+  <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/location_province.png" style="zoom:70%" />
 
   &nbsp;
 
