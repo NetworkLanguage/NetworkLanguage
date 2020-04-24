@@ -1,42 +1,86 @@
-## 安装环境及运行
-### 环境需求
+## 安装环境及代码使用说明
 
-1. Python版本及环境
+### 安装环境
 
-   Python 3.6
+- Python 3 +
+- Pytorch 1.1
+- Pandas
+- Numpy
+- jieba
+- tqdm
+- sklearn
+- gensim
+- fasttext
+- tensorboard
 
-2. 安装包
 
-   - scikit-learn 0.21.3
-   - gensim 3.8.0
-   - jieba 0.39
-   - fasttext 0.9.1
 
-### 运行
+### 使用说明
 
-1. BOW（词袋模型）
+#### 数据集选择
 
-   
+在每个方法对应的代码中取消注释以选择相应的数据集
 
-2. Word2vec
+```python
+# task = "weibo_gender"
+# task = "weibo_area"
+task = "douban"
+```
 
-   - 代码见
 
-   - main函数中可调整参数有：
-     - task: 对应三个预测任务，分别为weibo_gender, weibo_area, douban
-     - dim: 词向量维度
-     - iter: word2vec训练迭代次数
+#### BOW
 
-3. fastText
+- [code](https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/bow.py)
 
-   - 代码见
 
-   - main函数可调整参数有：
-     - task: 对应三个预测任务，分别为weibo_gender, weibo_area, douban
-     - dim: 特征维度
-     - epoch：模型训练迭代次数
+- 训练并测试
 
-4. BERT
+```python
+python bow.py
+```
 
-5. ERNIE
 
+
+#### Word2vec
+
+- [code](https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/w2v.py)
+
+- main函数中可调整参数有：
+	- dim: 词向量维度
+	- iter: word2vec训练迭代次数
+
+- 训练并测试
+```python
+python w2v.py
+```
+
+
+
+#### fastText
+
+- [code](https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/fast_text.py)
+
+- main函数可调整参数有：
+    - dim: 特征维度
+    - epoch：模型训练迭代次数
+
+- 训练并测试
+```python
+python fast_text.py
+```
+
+
+
+#### BERT与ERNIE
+
+- [BERT code](https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/Bert/models/bert.py)
+- [ERNIE code](https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/Bert/models/ERNIE.py)
+
+- 训练并测试
+
+```python
+# bert
+python run.py --model bert
+# ERNIE
+python run.py --model ERNIE
+```

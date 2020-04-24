@@ -4,7 +4,7 @@
 
 针对微博数据集和豆瓣影评数据集，分别使用以下方法建立模型：
 
-- 词袋模型
+- BOW
 
 - Word2vec
 
@@ -14,4 +14,8 @@
 
 - ERNIE
 
-  
+整体框架如下图所示：
+
+<img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/framework.png?raw=trueimage" style="zoom:50%;height:600px;width:1000px;" />
+
+&nbsp;

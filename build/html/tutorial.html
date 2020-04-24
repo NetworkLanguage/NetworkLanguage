@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. 安装环境及运行 &mdash; 网络语言特征刻画与身份识别方法研究 1.0 文档</title>
+  <title>3. 安装环境及代码使用说明 &mdash; 网络语言特征刻画与身份识别方法研究 1.0 文档</title>
   
 
   
@@ -94,9 +94,16 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. 项目介绍</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">2. 数据集</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 安装环境及运行</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.1. 环境需求</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">3.2. 运行</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 安装环境及代码使用说明</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.1. 安装环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.2. 使用说明</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">数据集选择</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bow">BOW</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#word2vec">Word2vec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fasttext">fastText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#berternie">BERT与ERNIE</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="results.html">4. 实验结果</a></li>
@@ -145,7 +152,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>3. 安装环境及运行</li>
+      <li>3. 安装环境及代码使用说明</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -165,50 +172,87 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>3. 安装环境及运行<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>3. 安装环境及代码使用说明<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id2">
-<h2>3.1. 环境需求<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<ol>
-<li><p class="first">Python版本及环境</p>
-<p>Python 3.6</p>
-</li>
-<li><p class="first">安装包</p>
+<h2>3.1. 安装环境<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>scikit-learn 0.21.3</li>
-<li>gensim 3.8.0</li>
-<li>jieba 0.39</li>
-<li>fasttext 0.9.1</li>
+<li>Python 3 +</li>
+<li>Pytorch 1.1</li>
+<li>Pandas</li>
+<li>Numpy</li>
+<li>jieba</li>
+<li>tqdm</li>
+<li>sklearn</li>
+<li>gensim</li>
+<li>fasttext</li>
+<li>tensorboard</li>
 </ul>
-</li>
-</ol>
 </div>
 <div class="section" id="id3">
-<h2>3.2. 运行<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
-<ol class="simple">
-<li>BOW（词袋模型）</li>
-<li>Word2vec<ul>
-<li>代码见</li>
+<h2>3.2. 使用说明<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id4">
+<h3>数据集选择<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>在每个方法对应的代码中取消注释以选择相应的数据集</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># task = &quot;weibo_gender&quot;</span>
+<span class="c1"># task = &quot;weibo_area&quot;</span>
+<span class="n">task</span> <span class="o">=</span> <span class="s2">&quot;douban&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bow">
+<h3>BOW<a class="headerlink" href="#bow" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/bow.py">code</a></li>
+<li>训练并测试</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">bow</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="word2vec">
+<h3>Word2vec<a class="headerlink" href="#word2vec" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/w2v.py">code</a></li>
 <li>main函数中可调整参数有：<ul>
-<li>task: 对应三个预测任务，分别为weibo_gender, weibo_area, douban</li>
 <li>dim: 词向量维度</li>
 <li>iter: word2vec训练迭代次数</li>
 </ul>
 </li>
+<li>训练并测试</li>
 </ul>
-</li>
-<li>fastText<ul>
-<li>代码见</li>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">w2v</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fasttext">
+<h3>fastText<a class="headerlink" href="#fasttext" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/fast_text.py">code</a></li>
 <li>main函数可调整参数有：<ul>
-<li>task: 对应三个预测任务，分别为weibo_gender, weibo_area, douban</li>
 <li>dim: 特征维度</li>
 <li>epoch：模型训练迭代次数</li>
 </ul>
 </li>
+<li>训练并测试</li>
 </ul>
-</li>
-<li>BERT</li>
-<li>ERNIE</li>
-</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">fast_text</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="berternie">
+<h3>BERT与ERNIE<a class="headerlink" href="#berternie" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/Bert/models/bert.py">BERT code</a></li>
+<li><a class="reference external" href="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/python_codes/Bert/models/ERNIE.py">ERNIE code</a></li>
+<li>训练并测试</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># bert</span>
+<span class="n">python</span> <span class="n">run</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">model</span> <span class="n">bert</span>
+<span class="c1"># ERNIE</span>
+<span class="n">python</span> <span class="n">run</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">model</span> <span class="n">ERNIE</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 

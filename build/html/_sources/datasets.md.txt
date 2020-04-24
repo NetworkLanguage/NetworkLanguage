@@ -5,11 +5,50 @@
 ### 微博数据集
 - [链接](https://www.aminer.cn/influencelocality)
 
-- 统计
+- 筛选数据
+
+  - 用户数量：6884名
+  - 女性用户数：3104名
+  - 男性用户数：3780名
+  - 地理位置分布：中国的34个省市自治区及海外地区
 
 
+- 词云
+
+  - 女性用户微博词云
+
+    <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/female.png?raw=trueimage" style="zoom:50%" />
+
+    &nbsp;
+
+  - 男性用户微博词云
+
+    <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/male.png?raw=trueimage" style="zoom:50%" />
+
+    &nbsp;
+
+- 用户地理分布图
+  (图内未显示海外地区的581名用户)
+
+  <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/location_province.png?raw=trueimage" style="zoom:50%" />
+
+  &nbsp;
 
 ### 豆瓣影评数据集
-- [链接]()
-- 统计
+- [链接](http://moviedata.csuldw.com/)
 
+- 筛选数据
+
+  - 用户数量：1000名
+  - 评论数量：261,118条
+  - 每个用户评论数量：200-353条
+  - 用户平均评论数量：261条
+  - 评论平均长度：54
+
+- 影评词云
+
+  <img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/douban.png?raw=trueimage" style="zoom:50%" />
+
+&nbsp;
+
+  
