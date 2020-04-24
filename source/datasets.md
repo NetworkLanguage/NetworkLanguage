@@ -15,17 +15,10 @@
 
 - 词云
 
-  - 女性用户微博词云
+  <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/weibo.png" style="zoom:50%" />
 
-    <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/female.png" style="zoom:50%" />
+  &nbsp;
 
-    &nbsp;
-
-  - 男性用户微博词云
-
-    <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/male.png" style="zoom:50%" />
-
-    &nbsp;
 
 - 用户地理分布图
   (图内未显示海外地区的581名用户)
