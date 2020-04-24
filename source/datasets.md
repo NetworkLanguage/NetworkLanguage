@@ -23,14 +23,14 @@
 
   - 男性用户微博词云
 
-    <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/male.png?raw=trueimage" style="zoom:50%" />
+    <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/male.png" style="zoom:50%" />
 
     &nbsp;
 
 - 用户地理分布图
   (图内未显示海外地区的581名用户)
 
-  <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/location_province.png" style="zoom:70%" />
+  <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/location_province.png" style="zoom:65%" />
 
   &nbsp;
 

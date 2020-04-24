@@ -16,6 +16,7 @@
 
 整体框架如下图所示：
 
-<img src="https://github.com/NetworkLanguage/NetworkLanguage/blob/master/images/framework.png?raw=trueimage" style="zoom:50%;height:600px;width:1000px;" />
+<img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/framework.png" style="zoom:30%" />
 
 &nbsp;
+
