@@ -14,6 +14,8 @@
 
 - ERNIE
 
+（其中BERT与ERNIE模型参照了GitHub仓库：[Bert-Chinese-Text-Classification-Pytorch](https://github.com/649453932/Bert-Chinese-Text-Classification-Pytorch)）
+
 整体框架如下图所示：
 
 <img src="https://gitee.com/networklanguage/NetworkLanguage/raw/master/images/framework.png" style="zoom:30%" />
