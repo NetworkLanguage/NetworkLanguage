@@ -98,6 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#id2">4.1. 根据微博文本预测用户性别</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">4.2. 根据微博文本预测用户所在地区</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">4.3. 根据豆瓣影评预测用户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">4.4. 结果分析</a></li>
 </ul>
 </li>
 </ul>
@@ -248,7 +249,7 @@
 &nbsp;</div>
 <div class="section" id="id3">
 <h2>4.2. 根据微博文本预测用户所在地区<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
-<p>考虑到用户的省份较多，且部分用户集中在北京、上海、广州等地，其他省份的用户数量较少。因此根据地理位置分布，将用户所在省份划分为<strong>华北、华东、华南、华中、东北、西北、西南、港澳台地区、海外</strong>这9个区域，并预测用户所在区域。</p>
+<p>考虑到用户的省份较多，且部分用户集中在北京、上海、广州等地，其他省份的用户数量较少。因此根据地理位置分布，将用户所在省份划分为<strong>华北、华东、华南、华中、东北、西北、西南、港澳台地区、海外</strong>这9个区域，并预测用户所在的区域。</p>
 <table border="1" cellpadding="10">
     <tr>
         <th colspan = "2" align="center">model</th>
@@ -392,6 +393,16 @@
         <td align="center">0</td>
     </tr>
 </table><p>&nbsp;</p>
+</div>
+<div class="section" id="id5">
+<h2>4.4. 结果分析<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>一般而言，通过深度方法的词表示学习能够获得表征词之间相似性的向量表示，因此较新的深度学习模型在文本分类任务中表现更优。
+通过以上3个问题的实验结果，我们总结了一些新的发现：</p>
+<ul class="simple">
+<li>对性别/地区的预测，和普遍认知相同，深度学习方法相对来说有较大提升。</li>
+<li>在对人的身份id的识别中，深度学习的方法表现效果不好。这说明可能一个人的用词习惯是固定的，在同一类词中一个人可能只偏好使用某个词语。由此，发现词之间的关联性对个人id的预测帮助不大。</li>
+</ul>
+<p>因此，对于不同的任务，不同方法的效果也会存在差距，需要结合具体问题做进一步分析。</p>
 </div>
 </div>
 
