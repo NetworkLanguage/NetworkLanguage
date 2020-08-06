@@ -1,4 +1,4 @@
-# 网络言语特征刻画与身份识别方法研究项目成果 <br> <p align="right">——个人隐私泄露风险评估系统</p>
+# 网络言语特征刻画与身份识别方法研究项目成果 <br> <center>——个人隐私泄露风险评估系统</center>
 详细介绍可参考文档 <https://networklanguage.readthedocs.io/zh_CN/latest/#>
 1. 项目介绍
 2. 数据集
